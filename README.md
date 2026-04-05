@@ -1,4 +1,4 @@
-# Lab-de-Troubleshooting-de-Rede-e-Servi-os
+# Lab de Troubleshooting de Rede e Serviços
 Este laboratório simula cenários reais de suporte técnico em ambientes Windows e Linux, abordando problemas comuns relacionados a:
 
 Conectividade de rede
