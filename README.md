@@ -57,7 +57,7 @@ ping 192.168.10.20
 
 💣 CENÁRIO 1 — Serviço Web Inativo
 
-📌 Situação inicial (serviço funcionando)
+ Situação inicial (serviço funcionando)
 
  systemctl status apache2
 
@@ -127,83 +127,126 @@ A conectividade com o servidor estava funcional, porém o serviço web não esta
 
 sudo systemctl start apache2
 
+---
+
+✅ Resultado
 
 ![site restaurado](img/15-print-site-restaurado.png)
 
+---
 
 
+🌐 CENÁRIO 2 — Falha de DNS
 
+📌 Problema
 
+Falha ao acessar sites por nome.
 
+---
 
+🔎 DNS incorreto
 
+![dns incorreto](img/16-print-dns-errado.png)
 
+---
 
+Teste com domínio
 
+ping google.com
 
+![ping falha](img/17-print-ping-google-falha.png)
 
+---
 
+Teste com IP
 
+ping 8.8.8.8
 
+![teste ip ](img/18-print-ping-ip-ok.png)
 
+---
 
+🧠 Diagnóstico
 
+A conectividade com a internet estava funcional, porém a resolução de nomes falhava devido à configuração incorreta de DNS.
 
+---
 
+🔧 Solução
 
+Configurar DNS correto:
 
+8.8.8.8
 
+---
 
+✅ Resultado
 
+![dns corrigido ](img/19-print-dns-corrigido.png)
 
+---
 
+🔥 CENÁRIO 3 — Firewall Bloqueando Serviço
 
+📌 Problema
 
+Servidor responde ping, mas o sistema não abre.
 
+---
 
+🔒 Bloqueio do firewall
 
+sudo ufw enable
 
+sudo ufw deny 80
 
+![bloqueio firewall ](img/20-print-firewall-bloqueio.png)
 
+---
 
+🔎 Teste de conectividade
 
+ping 192.168.10.20
 
+![ping firewall ](img/21-print-ping-ok-firewall.png)
 
+---
 
+🧠 Diagnóstico
 
+O firewall estava bloqueando o acesso à porta 80, impedindo o funcionamento do serviço web.
 
+---
 
+🔧 Solução
 
+sudo ufw allow 80
 
+---
 
+✅ Resultado
 
+![ping firewall ](img/22-print-firewall-corrigido.png)
 
+---
 
+🏆 Conclusão
 
+Este laboratório permitiu simular e resolver problemas reais de:
 
+Serviços
+DNS
+Firewall
+Conectividade
 
 
+Desenvolvendo habilidades práticas essenciais para atuação em suporte técnico.
 
+---
 
+👨‍💻 Autor
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Projeto desenvolvido para fins de estudo em redes, infraestrutura e suporte técnico.
 
 
 
