@@ -89,6 +89,47 @@ sudo systemctl stop apache2
 
 ---
 
+🔎 Teste de conectividade
+
+ping 192.168.10.20
+
+✔ Funciona
+
+![conectividade ping](img/10-print-ping-ok-servico-off.png)
+
+---
+
+🔎 DIAGNÓSTICO
+
+Verificação da porta
+
+sudo ss -tuln
+
+![porta ](img/13-print-porta-80-fechada.png)
+
+---
+
+Verificação do serviço
+
+systemctl status apache2
+
+![apache inativo](img/14-print-apache-inativo.png)
+
+---
+
+🧠 Diagnóstico
+
+A conectividade com o servidor estava funcional, porém o serviço web não estava em execução, impedindo o acesso ao sistema.
+
+---
+
+🔧 Solução
+
+sudo systemctl start apache2
+
+
+![site restaurado](img/15-print-site-restaurado.png)
+
 
 
 
