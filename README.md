@@ -11,6 +11,7 @@ O objetivo é diagnosticar e resolver falhas utilizando ferramentas de troublesh
 ---
 
 🖥️ Preparação do Ambiente
+
 🔧 Configuração da Rede no VirtualBox
 
 Ambas as máquinas configuradas com:
