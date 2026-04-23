@@ -259,6 +259,6 @@ Ajuste na regra do firewall para permitir conexões na porta 80 (HTTP).
 
 
 
-## 🚀 Resultado
+##  Resultado
 
 Ao final do laboratório foi possível identificar, diagnosticar e corrigir múltiplos cenários de falha relacionados a serviços, DNS, firewall e conectividade, reforçando conhecimentos práticos aplicáveis em rotinas de suporte técnico, help desk e infraestrutura de TI.
